@@ -25,9 +25,18 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1,3)
 console.log(myn2)
 
+let marvel_heroes = ["Thor", "Ironman", "Hulk"]
+let dc_heroes = ["Batman","Aquaman","Superman"]
+
+//This is wrong as it wil create array inside the array.
+//And trat dc_heroes as a single element
+marvel_heroes.push(dc_heroes)
+
+//Concat will not not add the array the existing value
+// To see the concated array the array should be stored in new variable.
+marvel_heroes.concat(dc_heroes)
 
 
-
-
+//The best way to concat array is using spread operator.
 
 
