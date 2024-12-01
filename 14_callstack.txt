@@ -1,0 +1,28 @@
+//Interview Question
+1.To run a program JAvascript execute in 2 phases
+This phases are execute in a thread(process)
+a. Global Execution Context
+b. Function Execution Context
+c. Eval Execution Context(Optional)
+
+The two phases are
+1. Memory(Creation) Phase
+Only memory is allocated to variables in this phase.Context
+Firstly in Memory Phase the values are stored as undefined.Context
+
+2. Execution Phase
+All the variable stored in memory phase are assigned the respective values
+
+
+For Every Function New Phases are created
+
+Each execution context is deleted automatically afte the execution/process
+
+CALL STACK - Based on LIFO
+|         |
+|         |
+|         |
+|funct2()_|
+|funct1()_|
+|__GEC____|
+
